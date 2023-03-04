@@ -64,6 +64,7 @@ class PluginWrapper:
             # export a bunch of environment variables to help plugin developers
             environ["HOME"] = helpers.get_home_path("root" if "root" in self.flags else helpers.get_user())
             environ["USER"] = "root" if "root" in self.flags else helpers.get_user()
+            environ["UID"] = "0" if "root" in self.flags else helpers.get_user_id()
             environ["DECKY_VERSION"] = helpers.get_loader_version()
             environ["DECKY_USER"] = helpers.get_user()
             environ["DECKY_USER_HOME"] = helpers.get_home_path()

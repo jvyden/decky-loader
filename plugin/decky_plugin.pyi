@@ -36,6 +36,14 @@ It would be `root` if `root` was specified in the plugin's flags otherwise the u
 e.g.: `deck`
 """
 
+USER_ID: int
+"""
+The effective UID running the process.
+Environment variable: `UID`.
+It would be `0` if `root` was specified in the plugin's flags otherwise the id of the user whose home decky resides in.
+e.g.: `1000`
+"""
+
 DECKY_VERSION: str
 """
 The version of the decky loader.
