@@ -58,6 +58,13 @@ Environment variable: `DECKY_USER`.
 e.g.: `deck`
 """
 
+DECKY_USER_ID: int
+"""
+The UID of the user whose home decky resides in.
+Environment variable: `DECKY_USER_ID`.
+e.g.: `1000`
+"""
+
 DECKY_USER_HOME: str
 """
 The home of the user where decky resides in.
